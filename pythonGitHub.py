@@ -46,7 +46,7 @@ def downloadFile():
 
 if __name__ == "__main__":
 
-    executeNifiProcessor()
+    downloadFile()
     
     
 # References:
