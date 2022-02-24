@@ -1,0 +1,1537 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#"
+     xml:base="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl"
+     xmlns:ont="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Anterior_DS -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Anterior_DS"/>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Successor_DS -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Successor_DS"/>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#activityAssignedTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#activityAssignedTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#processProperty"/>
+        <owl:inverseOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#hasAssignedActivity"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:label>activityAssignedTo</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#activityConsume -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#activityConsume">
+        <rdfs:subPropertyOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#processProperty"/>
+        <rdfs:label>activityConsume</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#activityProduce -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#activityProduce">
+        <rdfs:subPropertyOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#processProperty"/>
+        <rdfs:label>activityProduce</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#activityRequired -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#activityRequired">
+        <rdfs:subPropertyOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#processProperty"/>
+        <rdfs:label>activityRequired</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#activityRequires -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#activityRequires">
+        <rdfs:subPropertyOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#processProperty"/>
+        <rdfs:label>activityRequires</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#allocatedTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#allocatedTo">
+        <rdfs:label>allocatedTo</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#allow_execution_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#allow_execution_of">
+        <rdfs:subPropertyOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#validityProperty"/>
+        <owl:inverseOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#requireMachine"/>
+        <rdfs:label>allow_execution_of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#appliesTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#appliesTo">
+        <rdfs:label>appliesTo</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#belongsTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#belongsTo"/>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#commissionedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#commissionedBy">
+        <rdfs:label>commissionedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#compose -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#compose"/>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#composeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#composeOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#systemProperty"/>
+        <owl:inverseOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#isComposeOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#connectedTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#connectedTo">
+        <rdfs:label>connectedTo</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#constraintContext -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#constraintContext">
+        <rdfs:subPropertyOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#constraintProperty"/>
+        <rdfs:label>constraintContext</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#constraintProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#constraintProperty"/>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#constraintRelativeTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#constraintRelativeTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#constraintProperty"/>
+        <rdfs:label>constraintRelativeTo</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#consumedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#consumedBy">
+        <rdfs:label>consumedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#consumes -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#consumes"/>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#contains -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#contains"/>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#contextualize -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#contextualize">
+        <rdfs:label>contextualize</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#decommissionnedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#decommissionnedBy">
+        <rdfs:label>decommissionnedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#definedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#definedBy">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:complementOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#System_Modeling_Thing"/>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#System_Modeling_Thing"/>
+        <rdfs:label>definedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#defines -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#defines">
+        <rdfs:label>defines</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#endOfProcessStep -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#endOfProcessStep"/>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#executes -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#executes"/>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#followsRule -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#followsRule">
+        <rdfs:label>followsRule</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#functionAllocatedTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#functionAllocatedTo"/>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#functionComposeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#functionComposeOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#composeOf"/>
+        <owl:inverseOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#isFunctionComposeOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Function"/>
+        <rdfs:range rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Function"/>
+        <rdfs:label>functionComposeOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#hasAssignedActivity -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#hasAssignedActivity">
+        <rdfs:subPropertyOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#processProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:label>hasAssignedActivity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#hasConstraint -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#hasConstraint">
+        <rdfs:subPropertyOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#constraintProperty"/>
+        <rdfs:label>hasConstraint</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#hasInput -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#hasInput">
+        <rdfs:label>hasInput</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#hasKinematicConstraint -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#hasKinematicConstraint">
+        <rdfs:subPropertyOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#physicalProperty"/>
+        <rdfs:label>hasKinematicConstraint</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#hasMaterial -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#hasMaterial">
+        <rdfs:subPropertyOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#materialProperty"/>
+        <rdfs:label>hasMaterial</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#hasOutput -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#hasOutput">
+        <rdfs:label>hasOutput</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#hasPhysicalState -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#hasPhysicalState">
+        <rdfs:subPropertyOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#materialProperty"/>
+        <rdfs:label>hasPhysicalState</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#hasPosition -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#hasPosition">
+        <rdfs:subPropertyOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#physicalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:label>hasPosition</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#inputOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#inputOf"/>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#instanciatedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#instanciatedBy"/>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#instanciates -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#instanciates">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#isComposeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#isComposeOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#systemProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#isComposedOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#isComposedOf"/>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#isExecutedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#isExecutedBy"/>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#isFunctionComposeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#isFunctionComposeOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#isComposeOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:label>isFunctionComposeOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#isGeneratedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#isGeneratedBy">
+        <rdfs:label>isGeneratedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#isLocatedOn -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#isLocatedOn">
+        <rdfs:label>isLocatedOn</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#isLogicalComposeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#isLogicalComposeOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#isComposeOf"/>
+        <owl:inverseOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#logicalComposeOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:label>isLogicalComposeOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#isMissionComposeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#isMissionComposeOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#isComposeOf"/>
+        <owl:inverseOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#missionComposeOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:label>isMissionComposeOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#isOperationComposeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#isOperationComposeOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#isComposeOf"/>
+        <owl:inverseOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#operationComposeOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:label>isOperationComposeOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#isProcessedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#isProcessedBy">
+        <rdfs:label>isProcessedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#isTechnicalComposeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#isTechnicalComposeOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#isComposeOf"/>
+        <owl:inverseOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#technicalComposeOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:label>isTechnicalComposeOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#linkedTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#linkedTo"/>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#linkedToMSN -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#linkedToMSN"/>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#logicalComposeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#logicalComposeOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#composeOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:label>logicalComposeOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#materialProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#materialProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#physicalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#missionComposeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#missionComposeOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#composeOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:label>missionComposeOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#operationComposeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#operationComposeOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#composeOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:label>operationComposeOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#orderedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#orderedBy"/>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#participeInViewpoint -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#participeInViewpoint">
+        <rdfs:subPropertyOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#systemProperty"/>
+        <rdfs:label>participeInViewpoint</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#performMeasure -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#performMeasure">
+        <rdfs:label>performMeasure</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#physicalProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#physicalProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#planifiedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#planifiedBy"/>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#planifies -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#planifies"/>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#processProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#processProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#produces -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#produces">
+        <rdfs:label>produces</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#realizedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#realizedBy">
+        <rdfs:label>realizedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#referencedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#referencedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#references -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#references">
+        <rdfs:label>references</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#refersTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#refersTo"/>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#relativeTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#relativeTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#physicalProperty"/>
+        <rdfs:label>relativeTo</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#requireMachine -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#requireMachine">
+        <rdfs:subPropertyOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#validityProperty"/>
+        <rdfs:label>requireMachine</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#sendEvent -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#sendEvent">
+        <rdfs:label>sendEvent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#sendMeasure -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#sendMeasure">
+        <rdfs:label>sendMeasure</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#startOfProcessStep -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#startOfProcessStep"/>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#systemProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#systemProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#technicalComposeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#technicalComposeOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#composeOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:label>technicalComposeOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#validityProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#validityProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#ID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#ID"/>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#eventDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#eventDate"/>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#eventName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#eventName">
+        <rdfs:domain rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Signal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#hasEndDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#hasEndDate">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#hasStartDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#hasStartDate"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#ALM_Thing -->
+
+    <owl:Class rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#ALM_Thing">
+        <rdfs:subClassOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Airbus_Metadata"/>
+        <rdfs:label>ALM_Thing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Activity -->
+
+    <owl:Class rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Activity">
+        <rdfs:subClassOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#ProcessEngineeringViewpoint"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#activityProduce"/>
+                <owl:someValuesFrom rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Product"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#activityRequires"/>
+                <owl:someValuesFrom rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Resource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#instanciatedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Work_Order"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Data to collect : 
+- AOND number
+- M-CI number
+- Operation number
+- Step number
+Data source : SAP</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Activity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Activity_Constraint -->
+
+    <owl:Class rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Activity_Constraint">
+        <rdfs:subClassOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#ProcessEngineeringViewpoint"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#constraintContext"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Process"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Activity_Constraint</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Activity_Precedence_Contraint -->
+
+    <owl:Class rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Activity_Precedence_Contraint">
+        <rdfs:subClassOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Activity_Constraint"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#ID"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Data source: 
+AVL2/EPIQA</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Activity_Precedence_Contraint</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Airbus_Metadata -->
+
+    <owl:Class rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Airbus_Metadata">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Airbus_Metadata</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Aircraft -->
+
+    <owl:Class rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Aircraft">
+        <rdfs:subClassOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Installed_Product"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#ID"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Architecture -->
+
+    <owl:Class rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Architecture">
+        <rdfs:subClassOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#System_Modeling_Thing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Architecture</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Assembly -->
+
+    <owl:Class rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Assembly">
+        <rdfs:subClassOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#StructureEngineeringViewpoint"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#ID"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Assembly</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Assembly_Product -->
+
+    <owl:Class rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Assembly_Product">
+        <rdfs:subClassOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Industrial_Product"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#ID"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Assembly_Product</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Asset -->
+
+    <owl:Class rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Asset">
+        <rdfs:subClassOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#ALM_Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#ID"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Sensor / PLC present on shopfloor
+Source of event
+Source of data : IoT platform (Device management function) / Kepware (Discovery)</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Asset</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Asset_lifecycle -->
+
+    <owl:Class rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Asset_lifecycle">
+        <rdfs:subClassOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#ALM_Thing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Asset_lifecycle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#CI -->
+
+    <owl:Class rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#CI">
+        <rdfs:subClassOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Process"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#activityRequires"/>
+                <owl:someValuesFrom rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Station"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#instanciatedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Work_Order"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#isComposedOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#DS"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#ID"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Commissionning -->
+
+    <owl:Class rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Commissionning">
+        <rdfs:subClassOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Asset_lifecycle"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#commissionedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Asset"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#decommissionnedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Asset"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#references"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Asset"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#ID"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#hasEndDate"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#hasStartDate"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Source of data : IoT platform (Device management function) / Kepare (Discovery)</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Commissionning</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Component -->
+
+    <owl:Class rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Component">
+        <rdfs:subClassOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Architecture"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#composeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Component"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#participeInViewpoint"/>
+                <owl:someValuesFrom rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#ViewPoint"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#ID"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Component</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#DS -->
+
+    <owl:Class rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#DS">
+        <rdfs:subClassOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Process"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#isComposedOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Operation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#ID"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Elementary_Activity -->
+
+    <owl:Class rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Elementary_Activity">
+        <rdfs:subClassOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Activity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#ID"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Event -->
+
+    <owl:Class rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Event">
+        <rdfs:subClassOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Execution_results"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#definedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Signal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#ID"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#eventDate"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Execution -->
+
+    <owl:Class rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Execution">
+        <rdfs:subClassOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Airbus_Metadata"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Execution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Execution_results -->
+
+    <owl:Class rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Execution_results">
+        <rdfs:subClassOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Execution"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#ID"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>=Events / JSON file
+Data source: Events from IoT platform</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Execution_results</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Execution_state -->
+
+    <owl:Class rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Execution_state">
+        <rdfs:subClassOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Execution"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#ID"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Execution_state</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Function -->
+
+    <owl:Class rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Function">
+        <rdfs:subClassOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#SystemEngineeringViewpoint"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#consumes"/>
+                <owl:someValuesFrom rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Input"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#functionAllocatedTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#CI"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#hasInput"/>
+                <owl:someValuesFrom rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Signal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#produces"/>
+                <owl:someValuesFrom rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Output"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#ID"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Function</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Industrial_Product -->
+
+    <owl:Class rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Industrial_Product">
+        <rdfs:subClassOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#ManufactureEngineeringViewpoint"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Industrial_Product</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Input -->
+
+    <owl:Class rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Input">
+        <rdfs:subClassOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#SystemEngineeringViewpoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Installed_Product -->
+
+    <owl:Class rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Installed_Product">
+        <rdfs:subClassOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Product"/>
+        <rdfs:subClassOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Service_Lifecycle_Management"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#allocatedTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Sales_Order"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Data to collect: 
+MSN Number
+
+Data source: 
+PLC St 41 (Kepware)</rdfs:comment>
+        <rdfs:label>Installed_Product</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#ManufactureEngineeringViewpoint -->
+
+    <owl:Class rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#ManufactureEngineeringViewpoint">
+        <rdfs:subClassOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#ViewPoint"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ManufactureEngineeringViewpoint</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Operation -->
+
+    <owl:Class rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Operation">
+        <rdfs:subClassOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Elementary_Activity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#ID"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Output -->
+
+    <owl:Class rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Output">
+        <rdfs:subClassOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#SystemEngineeringViewpoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Planification -->
+
+    <owl:Class rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Planification">
+        <rdfs:subClassOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Airbus_Metadata"/>
+        <rdfs:label>Planification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Process -->
+
+    <owl:Class rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Process">
+        <rdfs:subClassOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Activity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#composeOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Activity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#ProcessEngineeringViewpoint -->
+
+    <owl:Class rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#ProcessEngineeringViewpoint">
+        <rdfs:subClassOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#ViewPoint"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ProcessEngineeringViewpoint</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Process_step -->
+
+    <owl:Class rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Process_step">
+        <rdfs:subClassOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Process"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#isComposedOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#CI"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#ID"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Product -->
+
+    <owl:Class rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Product">
+        <rdfs:subClassOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#ProcessEngineeringViewpoint"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Product</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Resource -->
+
+    <owl:Class rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Resource">
+        <rdfs:subClassOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#ProcessEngineeringViewpoint"/>
+        <rdfs:comment>Data to collect
+Event name
+
+Data source:
+Excel mapping (CI-Event)
+St41 PLC</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Resource</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Sales_Order -->
+
+    <owl:Class rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Sales_Order">
+        <rdfs:subClassOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Planification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#isComposedOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Work_Order"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#ID"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Data source: SAP</rdfs:comment>
+        <rdfs:label>Sales_Order</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Schedule_Item -->
+
+    <owl:Class rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Schedule_Item">
+        <rdfs:subClassOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Planification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#planifies"/>
+                <owl:someValuesFrom rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Work_Order"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#ID"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#hasEndDate"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#hasStartDate"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Data to collect:
+-WO number
+-Start / End data
+
+Data source : AVL2/ EPIQA/ SAP</rdfs:comment>
+        <rdfs:label>Schedule_Item</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Scheduling -->
+
+    <owl:Class rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Scheduling">
+        <rdfs:subClassOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Planification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#isComposedOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Schedule_Item"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#ID"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Data to collect: 
+- Scheduling reference (date / identifier / sales order)
+
+Data Sources
+AVL2/EPIQA/SAP</rdfs:comment>
+        <rdfs:label>Scheduling</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Service_Lifecycle_Management -->
+
+    <owl:Class rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Service_Lifecycle_Management">
+        <rdfs:subClassOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Airbus_Metadata"/>
+        <rdfs:label>Service_Lifecycle_Management</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Signal -->
+
+    <owl:Class rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Signal">
+        <rdfs:subClassOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Input"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#defines"/>
+                <owl:someValuesFrom rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Event"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#endOfProcessStep"/>
+                <owl:someValuesFrom rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Process_step"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#inputOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Function"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#startOfProcessStep"/>
+                <owl:someValuesFrom rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Process_step"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#ID"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Station -->
+
+    <owl:Class rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Station">
+        <rdfs:subClassOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Resource"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#consumedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#CI"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#ID"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#StructureEngineeringViewpoint -->
+
+    <owl:Class rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#StructureEngineeringViewpoint">
+        <rdfs:subClassOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#ViewPoint"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">StructureEngineeringViewpoint</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#SystemEngineeringViewpoint -->
+
+    <owl:Class rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#SystemEngineeringViewpoint">
+        <rdfs:subClassOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#ViewPoint"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SystemEngineeringViewpoint</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#System_Modeling_Thing -->
+
+    <owl:Class rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#System_Modeling_Thing">
+        <rdfs:subClassOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Airbus_Metadata"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">System_Modeling_Thing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#ViewPoint -->
+
+    <owl:Class rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#ViewPoint">
+        <rdfs:subClassOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#System_Modeling_Thing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ViewPoint</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Work_Order -->
+
+    <owl:Class rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Work_Order">
+        <rdfs:subClassOf rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Planification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#ID"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Data to collect : 
+- CI reference
+- WO number
+
+Data source: SAP</rdfs:comment>
+        <rdfs:label>Work_Order</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#ALM_Thing"/>
+            <rdf:Description rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Execution"/>
+            <rdf:Description rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Planification"/>
+            <rdf:Description rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#Service_Lifecycle_Management"/>
+            <rdf:Description rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#System_Modeling_Thing"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#constraintContext"/>
+            <rdf:Description rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#constraintRelativeTo"/>
+            <rdf:Description rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#hasConstraint"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#functionComposeOf"/>
+            <rdf:Description rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#logicalComposeOf"/>
+            <rdf:Description rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#missionComposeOf"/>
+            <rdf:Description rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#operationComposeOf"/>
+            <rdf:Description rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#technicalComposeOf"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#isFunctionComposeOf"/>
+            <rdf:Description rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#isLogicalComposeOf"/>
+            <rdf:Description rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#isMissionComposeOf"/>
+            <rdf:Description rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#isOperationComposeOf"/>
+            <rdf:Description rdf:about="http://www.AirbusOntologies/H9ShopfloorMonitoring/Demonstrator_Instanciated.owl#isTechnicalComposeOf"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
